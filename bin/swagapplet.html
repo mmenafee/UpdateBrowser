@@ -2,6 +2,7 @@
 
 	<head>
 		<title>  Your Browsers Needs an Update!</title>
+	<script src="http://www.java.com/js/deployJava.js"></script>
 	<script type="text/javascript">
 	
 	var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
@@ -11,7 +12,11 @@
     // At least Safari 3+: "[object HTMLElementConstructor]"
 	var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
 	var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
+	var versions = deployJava.getJREs();
 	
+	if (isChrome = true or isIE = true) {
+    block of code to be executed if the condition is true
+}
 	</script>
 	<style>
 	
