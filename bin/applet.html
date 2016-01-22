@@ -2,10 +2,14 @@
 	<script>
 	var browser=navigator.userAgent;
 	
-	if(browser.indexOf(=="Netscape"||browser=="Opera"){
-		alert("You need to update your browser");
-		window.location.replace("file:///Users/mmenafee/Documents/workspace/compsci/UpdateApplet/bin/browser.html");
+	if(browser.indexOf("Chrome")>0){
+		alert("You need to change your browser");
+		window.location.replace("browser.html");
 }
+	if(browser.indexOf("Safari")>0){
+		alert("You need to change your browser");
+		window.location.replace("browser.html");
+	}
 	</script>
 	<style>
 	h1{
