@@ -1,36 +1,25 @@
 <html>
-	<script src="http://www.java.com/js/deployJava.js"></script>
-	<script type="text/javascript">
+	<script>
+	var browser=navigator.userAgent;
 	
-	var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-    // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
-	var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
-	var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
-    // At least Safari 3+: "[object HTMLElementConstructor]"
-	var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
-	var isIE = /*@cc_on!@*/false || !!document.documentMode;   // At least IE6
-	var versions = deployJava.getJREs();
-	
-	if (isChrome = true or isIE = true) {
-    block of code to be executed if the condition is true
+	if(browser.indexOf(=="Netscape"||browser=="Opera"){
+		alert("You need to update your browser");
+		window.location.replace("file:///Users/mmenafee/Documents/workspace/compsci/UpdateApplet/bin/browser.html");
 }
-	if (isFirefox = true) {
-		document.write("Hello World!");
-	}	
 	</script>
+	<style>
+	h1{
+		text-align: center;
+		font-size: 40px;
+	}
+	</style>
 <head> 
-<title> Swag </title>
+<title> Computer Cost Calculator</title>
 </head>
-<body>
-<script>
-  function myFunction() {
-  	alert("Test");
-    window.open("file:///Users/mmenafee/Documents/workspace/compsci/UpdateApplet/bin/applet.html");
-}
-</script>
-	<button onclick="myFunction()">Try it</button>
-	<APPLET CODE = "UpdateBrowser.class" width=200 height 400 >
-	</APPLET>
+	<body>
+		<h1>Computer Cost Calculator</h1>
+		<APPLET CODE = "ComputerCost.class" width=200 height=400 >
+		</APPLET>
 	</body>
 	</html>	
 	
