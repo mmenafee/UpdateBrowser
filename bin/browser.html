@@ -7,24 +7,39 @@
 
 	</script>
 	<style>
-	
+	body {
+	background-color: #F0F8FF;
+	}
 	h1{
 		text-align: center;
 		font-size: 40px;
+		color:#336600;
+		font-family: arial; 
+	}
+	#words{
+		font-size: 24px;
 	}
 	#container{
 		text-align:center;
 	}
+	#square{
+	outline: #000000 double 10px;
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+	
+	}
 	div.img {
     	margin: 5px;
-    	border: 1px solid #ccc;
+    	border: 3px solid #ccc;
     	display:inline-block;
    		width: 180px;
    		
 	}
 
 	div.img:hover {
-    	border: 1px solid #777;
+    	border: 3px solid #777;
     	
 	}	
 
@@ -42,32 +57,36 @@
 	</head>
 	
 	<body>
-		<h1> Your browser does not run Java plugins</h1>
+<div id="square">
+	<br>
+		<h1> YOUR BROWSER DOES NOT SUPPORT JAVA</h1>
 		
 		<p align="center"> 
 		
-		<em>In order to run this applet you must download a browser that supports Java. </em>
+		<em id="words">In order to run this applet you must download a browser that supports Java. </em>
 			<br>
 		<strong>Choose a browser<strong>
 	<div id="container">
 		<div class="img">
-		  <a target="Firefox" href="https://www.mozilla.org/en-US/firefox/new/">
-			<img src="https://goo.gl/gwQgwp" alt="Firefox" width="300" height="200">
+		  <a target="Firefox" href="http://www.firefox.com">
+			<img src="http://www.actsofvolition.com/images/firefox_icon.png" alt="Firefox" width="300" height="200">
 		  </a>
 		  <div class="desc">Firefox </div>
 		</div>
 
 		<div class="img">
 		  <a target="Opera" href="http://www.opera.com">
-			<img src="https://goo.gl/P22upF" alt="Opera Browser" width="300" height="200">
+			<img src="https://goo.gl/P22upF" alt="Opera Browser" width="300" height="250">
 		  </a>
 		  <div class="desc">Opera</div>
 		</div>
 	</div> 
+	<br>
+	<br>
+	<br>
 		</p>
-
+</div>
 
 		
 	</body>
 </html>	
-	
